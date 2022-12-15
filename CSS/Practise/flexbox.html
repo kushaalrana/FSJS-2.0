@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+
+.container{
+    height:545px; 
+    width: 100%;
+    border: solid 1px black;
+    display: flex;
+    /* justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around; */
+    align-content: center;
+    /* justify-content: flex-start; */
+    /* justify-content: start; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row-reverse wrap; */
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+}   
+.item{
+    background-color: tomato;
+    border: solid 1px green;
+    padding: 3px;
+    margin:5px;
+    width: 200px;
+    height: 200px;
+}
+#item-3{
+    background-color: #fff;
+    order:2;
+}
+
+</style>
+<body>
+    <h1>This is Flex Box</h1>
+    <div class="container">
+
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+
+    </div>
+</body>
+</html>

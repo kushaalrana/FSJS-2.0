@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    background: #F9F5ED
+}  
+    
+nav{
+    padding-top: 30px;
+    height: 15vh;
+    margin-left:10%
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 5%;
+    font-weight: 700;
+
+}
+
+/* CSS for Hero Section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.leftmain{
+width: 40%
+}
+
+.leftmain h1{
+    font-size: 60px;
+    font-weight: 400%;
+}
+
+.leftmain p{
+    margin: 5% 0;
+    font-size:20px
+}
+.leftmain button{
+    padding: 15px 25px;
+    background-color: #3B855B;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rightmain{
+width: 60%;
+padding: 20px 5px;
+margin-left: 200px;
+}
+
+.rightmain div:first-child img{
+padding:20px;
+}
+.rightmain div:last-child img{
+    padding:20px;
+
+}

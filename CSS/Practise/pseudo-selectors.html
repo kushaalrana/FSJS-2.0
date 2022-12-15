@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selectors</title>
+    <style>
+      h2:hover {
+        background-color: blue;
+     }
+    a:link {
+      color: rgb(241, 169, 12);
+    }
+    a:visited {
+      color: rgb(241, 10, 164);
+    
+    }
+     a:focus {
+      color: rgb(93, 209, 255);
+    }  
+    
+    li:nth-child(3n){
+      background-color: rgb(26, 240, 186);
+      font-size: 25px;
+    }
+    li:nth-child(-n+3){
+      background-color: greenyellow;
+      font-size: 20px;
+    }
+    li:last-child{
+            color: red;
+        }
+        input:focus{
+          font-size: 30px;
+        }
+/* 
+    a.q1:link{
+      color: darkorchid;
+    }
+
+    a.q2:link{
+      color: indianred;
+    }
+
+    a.q1:visited{
+      color: rgb(0, 38, 255);
+      
+    }
+    a.q2:visited{
+      color: deepskyblue;
+    } */
+
+    p{
+      border: 5px solid yellow;
+      margin-right: 500px;
+      padding: 50px 10px 10px;
+
+      /* padding: 20px 20px 20px 200px; */
+    }
+
+    </style>
+  </head>
+  <body>
+    <h2>Heading</h2>
+    <p>This is the paragraph</p>
+    <a class="q1"  href="https://google.com" target="_blank">kljhg</a>
+    <a class="q2" href="https://techigai.keka.com" target="_blank">google</a>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 3</li>
+      <li>Item 3</li>
+      <li>Item 3</li>
+      <li>Item 3</li>
+      <li>Item 3</li>
+      <li>Item 3</li>
+      <li>Item 3</li>
+    </ol>
+
+    <input type="Name" /> name<br />
+    <input type="password" /> Password<br />
+  </body>
+</html>
+
