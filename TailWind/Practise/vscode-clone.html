@@ -1,407 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>VSCode Assignment</title>
-  </head>
-  <body>
-    <nav
-      class="flex flex-row justify-center items-center text-slate-400 font-semibold bg-[#2C2C32] fixed w-full"
-    >
-      <div class="flex items-center mx-3">
-        <img
-          class="h-8 w-8 mx-2"
-          src="./assets/vscode-logo.png"
-          alt="Vs code logo"
-        />
-        <h3 class="px-1 text-lg text-white">Visual Studio Code</h3>
-      </div>
-      <ul class="flex flex-row pr-20 text-lg">
-        <li class="px-4">Docs</li>
-        <li class="px-4">Updates</li>
-        <li class="px-4">Blog</li>
-        <li class="px-4">API</li>
-        <li class="px-4">Extension</li>
-        <li class="px-4">FAQ</li>
-        <li class="px-4">Learn</li>
-      </ul>
-      <div class="bg-[#444] flex flex-row justify-center items-center">
-        <img
-          class="bg-[#444] h-5 pl-3"
-          src="https://code.visualstudio.com/assets/icons/search.svg"
-          alt=""
-        />
-        <input
-          class="bg-[#444] h-14 pl-5 placeholder-white font-light w-40 focus:border-sky-900"
-          type="text"
-          placeholder="Search Docs"
-        />
-      </div>
-      <div class="bg-[#005BA4] flex flex-row justify-center items-center h-14">
-        <img
-          class="h-5 bg-[#005BA4] pl-3"
-          src="https://code.visualstudio.com/assets/icons/download.svg"
-          alt=""
-        />
-        <button class="text-white bg-[#005BA4] px-4">Download</button>
-      </div>
-    </nav>
 
-    <main class="">
-      <div class="bg-[#2C2C32] text-white flex justify-center">
-        <!-- Left side -->
-        <div class="flex flex-col items-center justify-start mr-28 mt-32">
-          <h2 class="text-6xl w-96 text-center mb-4">
-            <span class="font-light">Code editing. </span> Redefined.
-          </h2>
-          <p class="mb-7 text-xl text-slate-400">
-            Free. Build on open source. Runs everywhere.
-          </p>
-          <div class="flex">
-            <button class="text-white bg-[#005BA4] p-3 text-2xl w-80">
-              Download for Windows
-              <span class="font-light">Stable Build</span>
-            </button>
-            <button class="text-white bg-[#005BA4] ml-0.5 w-12">
-              <img class="ml-3 h-6" src="./assets/drop-down.png" alt="" />
-            </button>
-          </div>
-          <p class="bg-gray-900 text-sky-600 my-4 text-xl p-1 px-3 rounded-lg">
-            Web, Insiders edition, <span class="text-slate-500">or</span> other
-            platforms
-          </p>
-          <p class="text-slate-500 text-lg">
-            By using VS Code, you agree to its
-          </p>
-          <p class="text-base text-sky-600">license and privacy statement</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>VSCode Assignment</title>
+</head>
+
+<body>
+  <nav class="flex flex-row justify-center items-center text-slate-400 font-semibold bg-[#2C2C32] fixed w-full">
+    <div class="flex items-center mx-3">
+      <img class="h-5 w-5 mx-2" src="./assets/vscode-logo.png" alt="Vs code logo" />
+      <h3 class="px-1 text-lg text-white">Visual Studio Code</h3>
+    </div>
+    <ul class="flex flex-row pr-20 text-lg">
+      <li class="px-4">Docs</li>
+      <li class="px-4">Updates</li>
+      <li class="px-4">Blog</li>
+      <li class="px-4">API</li>
+      <li class="px-4">Extension</li>
+      <li class="px-4">FAQ</li>
+      <li class="px-4">Learn</li>
+    </ul>
+    <div class="bg-[#444] flex flex-row justify-center items-center">
+      <img class="bg-[#444] h-5 pl-3" src="https://code.visualstudio.com/assets/icons/search.svg" alt="" />
+      <input class="bg-[#444] h-14 pl-5 placeholder-white font-light w-40 focus:border-sky-900" type="text"
+        placeholder="Search Docs" />
+    </div>
+    <div class="bg-[#005BA4] flex flex-row justify-center items-center h-14">
+      <img class="h-5 bg-[#005BA4] pl-3" src="https://code.visualstudio.com/assets/icons/download.svg" alt="" />
+      <button class="text-white bg-[#005BA4] px-4">Download</button>
+    </div>
+  </nav>
+
+  <main class="">
+    <div class="bg-[#2C2C32] text-white flex justify-center">
+      <!-- Left side -->
+      <div class="flex flex-col items-center justify-start mr-28 mt-32">
+        <h2 class="text-6xl w-96 text-center mb-4">
+          <span class="font-light">Code editing. </span> Redefined.
+        </h2>
+        <p class="mb-7 text-xl text-slate-400">
+          Free. Build on open source. Runs everywhere.
+        </p>
+        <div class="flex">
+          <button class="text-white bg-[#005BA4] p-3 text-2xl w-80">
+            Download for Windows
+            <span class="font-light">Stable Build</span>
+          </button>
+          <button class="text-white bg-[#005BA4] ml-0.5 w-12">
+            <img class="ml-3 h-6" src="./assets/drop-down.png" alt="" />
+          </button>
         </div>
-        <div class="mt-28 mb-20">
-          <!-- Right side -->
-          <img src="./assets/vscode-image.png" alt="Vs Code image" />
-        </div>
+        <p class="bg-gray-900 text-sky-600 my-4 text-xl p-1 px-3 rounded-lg">
+          Web, Insiders edition, <span class="text-slate-500">or</span> other
+          platforms
+        </p>
+        <p class="text-slate-500 text-lg">
+          By using VS Code, you agree to its
+        </p>
+        <p class="text-base text-sky-600">license and privacy statement</p>
+      </div>
+      <div class="mt-28 mb-20">
+        <!-- Right side -->
+        <img src="./assets/vscode-image.png" alt="Vs Code image" />
+      </div>
+    </div>
+
+    <!-- Icon Section  -->
+    <div class="flex justify-center mt-5">
+      <div class="flex flex-col items-center mr-40">
+        <img class="w-12 mb-2" src="./assets/bulb-icon.png" alt="Bulb" />
+        <span class="text-2xl">IntelliSense</span>
       </div>
 
-      <!-- Icon Section  -->
-      <div class="flex justify-center mt-5">
-        <div class="flex flex-col items-center mr-40">
-          <img class="w-12 mb-2" src="./assets/bulb-icon.png" alt="Bulb" />
-          <span class="text-2xl">IntelliSense</span>
-        </div>
-
-        <div class="flex flex-col items-center mr-40">
-          <img class="w-16 mb-2" src="./assets/debug-icon.png" alt="Debug" />
-          <span class="text-2xl">Run and Debug</span>
-        </div>
-        <div class="flex flex-col items-center mr-40">
-          <img class="w-12 mb-3" src="./assets/git-icon.png" alt="Git" />
-          <span class="text-2xl">Built-in GIt</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img
-            class="w-16 mb-3"
-            src="./assets/extension-icon.png"
-            alt="Extension"
-          />
-          <span class="text-2xl">Extension</span>
-        </div>
+      <div class="flex flex-col items-center mr-40">
+        <img class="w-16 mb-2" src="./assets/debug-icon.png" alt="Debug" />
+        <span class="text-2xl">Run and Debug</span>
       </div>
+      <div class="flex flex-col items-center mr-40">
+        <img class="w-12 mb-3" src="./assets/git-icon.png" alt="Git" />
+        <span class="text-2xl">Built-in GIt</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="w-16 mb-3" src="./assets/extension-icon.png" alt="Extension" />
+        <span class="text-2xl">Extension</span>
+      </div>
+    </div>
 
-      <!-- Review Section  -->
-      <!-- <div class="bg-[#f5f5f5] h-96"> -->
-      <div class="bg-[#f5f5f5] h-96 flex justify-center mt-5">
-        <div class="flex justify-center items-center">
-          <div>
-            <img src="./assets/left-arrow.png" alt="" />
-          </div>
-          <div class="flex mr-5">
-            <img
-              class="w-16 rounded-full h-16 mr-3"
-              src="https://randomuser.me/api/portraits/women/57.jpg"
-              alt="Profile DP"
-            />
-            <div class="flex flex-col justify-center">
-              <div class="flex items-center">
-                <h5 class="font-bold text-lg mr-2">Jean Hunt</h5>
-                <h6 class="font-light">@Jean</h6>
-              </div>
-              <p class="w-72 text-xl">
-                VS @code does so many things right. I’m constantly impressed by
-                the UX, and customizing workspace / user preferences is no
-                exception. 🙌🏼💯 It just keeps getting better ❤️
-              </p>
+    <!-- Review Section  -->
+    <!-- <div class="bg-[#f5f5f5] h-96"> -->
+    <div class="bg-[#f5f5f5] h-96 flex justify-center mt-5">
+      <div class="flex justify-center items-center">
+        <div>
+          <img src="./assets/left-arrow.png" alt="" />
+        </div>
+        <div class="flex mr-5">
+          <img class="w-16 rounded-full h-16 mr-3" src="https://randomuser.me/api/portraits/women/67.jpg"
+            alt="Profile DP" />
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center">
+              <h5 class="font-bold text-lg mr-2">Jean Hunt</h5>
+              <h6 class="font-light">@Jean</h6>
             </div>
-          </div>
-          <div class="flex mr-5">
-            <img
-              class="w-16 rounded-full h-16 mr-3"
-              src="https://randomuser.me/api/portraits/women/24.jpg"
-              alt="Profile DP"
-            />
-            <div class="flex flex-col justify-center">
-              <div class="flex items-center">
-                <h5 class="font-bold text-lg mr-2">Gwen Hunt</h5>
-                <h6 class="font-light">@Gwen</h6>
-              </div>
-              <p class="w-72 text-xl">
-                VS Code will have deep remote development. You can connect to a
-                container running a different OS and use any VS Code plugins,
-                for that environment. 🔥🔥🔥
-              </p>
-            </div>
-          </div>
-          <div class="flex mr-5">
-            <img
-              class="w-16 rounded-full h-16 mr-3"
-              src="https://randomuser.me/api/portraits/men/86.jpg"
-              alt="Profile DP"
-            />
-            <div class="flex flex-col justify-center">
-              <div class="flex items-center">
-                <h5 class="font-bold text-lg mr-2">Ethan Hunt</h5>
-                <h6 class="font-light">@Ethan</h6>
-              </div>
-              <p class="w-72 text-xl">
-                VS Code is my most used and favorite editor. I love being able
-                to customize the editor - changing the layout, the icons, fonts
-                and color scheme is so easy!
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="./assets/right-arrow.png" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Information Section  -->
-      <div class="flex mt-24">
-        <div class="flex justify-end w-2/5">
-          <img
-            class=""
-            src="https://code.visualstudio.com/assets/images/home-intellisense.svg"
-            alt="IntelliSense"
-          />
-        </div>
-        <div class="ml-32 w-1/2">
-          <div class="w-3/4 font-light">
-            <h2 class="mb-10 text-4xl font-light">Meet IntelliSense</h2>
-            <!-- margin top not working for span  -->
-            <p class="text-2xl leading-10">
-              Go beyond syntax highlighting and autocomplete with IntelliSense,
-              which provides smart completions based on variable types, function
-              definitions, and imported modules.
+            <p class="w-72 text-xl">
+              VS @code does so many things right. I’m constantly impressed by
+              the UX, and customizing workspace / user preferences is no
+              exception. 🙌🏼💯 It just keeps getting better ❤️
             </p>
           </div>
         </div>
-      </div>
-      <div class="mt-24 bg-[#f5f5f5]">
-        <div class="flex p-24">
-          <div class="w-2/3 ml-32">
-            <div class="font-light w-4/5 justify-end">
-              <h2 class="mb-10 text-4xl font-light">
-                Print statement debugging is a thing of the past.
-              </h2>
-              <!-- margin top not working for span  -->
-              <p class="text-2xl leading-10">
-                Debug code right from the editor. Launch or attach to your
-                running apps and debug with break points, call stacks, and an
-                interactive console.
-              </p>
+        <div class="flex mr-5">
+          <img class="w-16 rounded-full h-16 mr-3" src="https://randomuser.me/api/portraits/women/24.jpg"
+            alt="Profile DP" />
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center">
+              <h5 class="font-bold text-lg mr-2">Gwen Hunt</h5>
+              <h6 class="font-light">@Gwen</h6>
             </div>
-          </div>
-          <div class="flex justify-start w-2/5">
-            <img
-              class=""
-              src="https://code.visualstudio.com/assets/images/home-debug.svg"
-              alt="IntelliSense"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="flex mt-24">
-        <div class="flex justify-end w-2/5">
-          <img
-            class=""
-            src="https://code.visualstudio.com/assets/images/home-git.svg"
-            alt="IntelliSense"
-          />
-        </div>
-        <div class="ml-32 w-1/2">
-          <div class="w-3/4 font-light">
-            <h2 class="mb-10 text-4xl font-light">Git commands built-in.</h2>
-            <!-- margin top not working for span  -->
-            <p class="text-2xl leading-10">
-              Working with Git and other SCM providers has never been easier.
-              Review diffs, stage files, and make commits right from the editor.
-              Push and pull from any hosted SCM service.
+            <p class="w-72 text-xl">
+              VS Code will have deep remote development. You can connect to a
+              container running a different OS and use any VS Code plugins,
+              for that environment. 🔥🔥🔥
             </p>
           </div>
         </div>
-      </div>
-      <div class="mt-24 bg-[#f5f5f5]">
-        <div class="flex p-24">
-          <div class="w-2/3 ml-32">
-            <div class="font-light w-4/5 justify-end">
-              <h2 class="mb-10 text-4xl font-light">
-                Extensible and customizable.
-              </h2>
-              <!-- margin top not working for span  -->
-              <p class="text-2xl leading-10">
-                Want even more features? Install extensions to add new
-                languages, themes, debuggers, and to connect to additional
-                services. Extensions run in separate processes, ensuring they
-                won't slow down your editor.
-                <a
-                  class="text-blue-700 font-normal"
-                  href="https://code.visualstudio.com/docs/editor/extension-marketplace"
-                >
-                  Learn more about extensions.
-                </a>
-              </p>
+        <div class="flex mr-5">
+          <img class="w-16 rounded-full h-16 mr-3" src="https://randomuser.me/api/portraits/men/86.jpg"
+            alt="Profile DP" />
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center">
+              <h5 class="font-bold text-lg mr-2">Ethan Hunt</h5>
+              <h6 class="font-light">@Ethan</h6>
             </div>
+            <p class="w-72 text-xl">
+              VS Code is my most used and favorite editor. I love being able
+              to customize the editor - changing the layout, the icons, fonts
+              and color scheme is so easy!
+            </p>
           </div>
-          <div class="flex justify-start w-2/5">
-            <img
-              class="w-96"
-              src="https://code.visualstudio.com/assets/images/Hundreds-of-Extensions.png"
-              alt="IntelliSense"
-            />
-          </div>
+        </div>
+        <div>
+          <img src="./assets/right-arrow.png" alt="" />
         </div>
       </div>
-      <div class="flex mt-24">
-        <div class="flex justify-end w-2/5">
-          <img
-            class=""
-            src="https://code.visualstudio.com/assets/images/home-azure.svg"
-            alt="IntelliSense"
-          />
+    </div>
+
+    <!-- Information Section  -->
+    <div class="flex mt-24">
+      <div class="flex justify-end w-2/5">
+        <img class="" src="https://code.visualstudio.com/assets/images/home-intellisense.svg" alt="IntelliSense" />
+      </div>
+      <div class="ml-32 w-1/2">
+        <div class="w-3/4 font-light">
+          <h2 class="mb-10 text-4xl font-light">Meet IntelliSense</h2>
+          <!-- margin top not working for span  -->
+          <p class="text-2xl leading-10">
+            Go beyond syntax highlighting and autocomplete with IntelliSense,
+            which provides smart completions based on variable types, function
+            definitions, and imported modules.
+          </p>
         </div>
-        <div class="ml-32 w-1/2">
-          <div class="w-3/4">
-            <h2 class="mb-10 text-3xl font-light">
-              Deploy with confidence and ease
+      </div>
+    </div>
+    <div class="mt-24 bg-[#f5f5f5]">
+      <div class="flex p-24">
+        <div class="w-2/3 ml-32">
+          <div class="font-light w-4/5 justify-end">
+            <h2 class="mb-10 text-4xl font-light">
+              Print statement debugging is a thing of the past.
             </h2>
             <!-- margin top not working for span  -->
-            <p class="text-xl leading-10">
-              With
-              <a
-                class="font-normal text-blue-700"
-                href="https://azure.microsoft.com/en-gb/"
-                >Microsoft Azure</a
-              >
-              you can deploy and host your React, Angular, Vue, Node, Python
-              (and more!) sites, store and query relational and document based
-              data, and scale with serverless computing, all with ease,
-              <a
-                class="font-normal text-blue-700"
-                href="https://code.visualstudio.com/docs/azure/extensions"
-              >
-                all from within VS Code.
+            <p class="text-2xl leading-10">
+              Debug code right from the editor. Launch or attach to your
+              running apps and debug with break points, call stacks, and an
+              interactive console.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-start w-2/5">
+          <img class="" src="https://code.visualstudio.com/assets/images/home-debug.svg" alt="IntelliSense" />
+        </div>
+      </div>
+    </div>
+    <div class="flex mt-24">
+      <div class="flex justify-end w-2/5">
+        <img class="" src="https://code.visualstudio.com/assets/images/home-git.svg" alt="IntelliSense" />
+      </div>
+      <div class="ml-32 w-1/2">
+        <div class="w-3/4 font-light">
+          <h2 class="mb-10 text-4xl font-light">Git commands built-in.</h2>
+          <!-- margin top not working for span  -->
+          <p class="text-2xl leading-10">
+            Working with Git and other SCM providers has never been easier.
+            Review diffs, stage files, and make commits right from the editor.
+            Push and pull from any hosted SCM service.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-24 bg-[#f5f5f5]">
+      <div class="flex p-24">
+        <div class="w-2/3 ml-32">
+          <div class="font-light w-4/5 justify-end">
+            <h2 class="mb-10 text-4xl font-light">
+              Extensible and customizable.
+            </h2>
+            <!-- margin top not working for span  -->
+            <p class="text-2xl leading-10">
+              Want even more features? Install extensions to add new
+              languages, themes, debuggers, and to connect to additional
+              services. Extensions run in separate processes, ensuring they
+              won't slow down your editor.
+              <a class="text-blue-700 font-normal"
+                href="https://code.visualstudio.com/docs/editor/extension-marketplace">
+                Learn more about extensions.
               </a>
             </p>
           </div>
         </div>
+        <div class="flex justify-start w-2/5">
+          <img class="w-96" src="https://code.visualstudio.com/assets/images/Hundreds-of-Extensions.png"
+            alt="IntelliSense" />
+        </div>
       </div>
+    </div>
+    <div class="flex mt-24">
+      <div class="flex justify-end w-2/5">
+        <img class="" src="https://code.visualstudio.com/assets/images/home-azure.svg" alt="IntelliSense" />
+      </div>
+      <div class="ml-32 w-1/2">
+        <div class="w-3/4">
+          <h2 class="mb-10 text-3xl font-light">
+            Deploy with confidence and ease
+          </h2>
+          <!-- margin top not working for span  -->
+          <p class="text-xl leading-10">
+            With
+            <a class="font-normal text-blue-700" href="https://azure.microsoft.com/en-gb/">Microsoft Azure</a>
+            you can deploy and host your React, Angular, Vue, Node, Python
+            (and more!) sites, store and query relational and document based
+            data, and scale with serverless computing, all with ease,
+            <a class="font-normal text-blue-700" href="https://code.visualstudio.com/docs/azure/extensions">
+              all from within VS Code.
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
 
-      <!-- Languages  -->
-      <div class="mt-24 bg-[#f5f5f5] flex flex-col items-center">
-        <div>
+    <!-- Languages  -->
+    <div class="bg-[#f5f5f5]">
+      <div class="flex flex-col items-center py-16 max-w-6xl m-auto">
+        <div class="my-11">
           <span class="font-thin text-4xl">VS Code for</span>
         </div>
-        <div class="text-2xl flex justify-center items-center w-1">
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/javascript.svg"
-                alt="JavaScript"
-              />
-              <span>JavaScript</span>
+        <div class="text-2xl flex flex-wrap">
+          <div class="flex w-1/6 mb-4 ">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/javascript.svg" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/python.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/java.svg" alt="Java" />
+            <span>Java</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/markdown.svg" alt="Markdown" />
+            <span>Markdown</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/typescript.svg" alt="TypeScript" />
+            <span>TypeScript</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/cpp.svg" alt="C++" />
+            <span>C/C++</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/json.svg" alt="JSON" />
+            <span>JSON</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/powershell.svg" alt="Powershell" />
+            <span>Powershell</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/html.svg" alt="HTML/CSS" />
+            <span>HTML/CSS</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/csharp.svg" alt="C#" />
+            <span>C#</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/php.svg" alt="PHP" />
+            <span>PHP</span>
+          </div>
+          <div class="flex w-1/6 mb-4">
+            <img src="https://code.visualstudio.com/assets/icons/file-icons/yaml.svg" alt="YAML" />
+            <span>YAML</span>
+          </div>
+        </div>
+        <div class="mt-5">
+          <a class="font-normal text-lg text-blue-700"
+            href="https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs">and
+            many more languages on the Marketplace...</a>
+        </div>
+        <button class="mt-10 py-5 px-9 bg-[#0066b8] text-white text-xl font-semibold">
+          Get Started Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Download Button -->
+
+    <div class="flex justify-center items-center">
+      <div class="flex justify-center flex-col items-center mr-5 mt-11">
+        <img class="w-24 pb-5" src="https://code.visualstudio.com/assets/images/windows-logo.png" alt="Windows" />
+        <button class="bg-[#2D74D7] px-20 py-2 flex mb-7 flex-col text-white">
+          <div class="flex mb-3 items-center">
+            <img class="h-5" src="https://code.visualstudio.com/assets/icons/download.svg" alt="" />
+            <span class="ml-3 font-bold text-lg"> Windows </span>
+          </div>
+          <span class="text-xs font-semi-bold">Windows 8, 10, 11</span>
+        </button>
+        <div class="grid grid-cols-2 place-items-center">
+          <span class="text-sm font-semi-bold">User Installer</span>
+          <div class="pb-1 text-xs">
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x86
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7]">
+              xArm64
+            </button>
+          </div>
+          <span class="text-sm text-semi-bold">System Installer</span>
+          <div class="pb-1 text-xs">
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x86
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7]">
+              xArm64
+            </button>
+          </div>
+          <span class="text-sm font-semi-bold">.zip</span>
+          <div class="pb-1 text-xs">
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x86
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7]">
+              xArm64
+            </button>
+          </div>
+          <span class="text-xs font-semi-bold ">CLI</span>
+          <div class="pb-1 text-xs">
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7] mr-1">
+              x86
+            </button>
+            <button class="text-white px-[1px] rounded-sm bg-[#2D74D7]">
+              xArm64
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center flex-col items-center mr-5 mt-14">
+        <img class="w-24 pb-3" src="https://code.visualstudio.com/assets/images/linux-logo.png" alt="Linux" />
+        <div class="flex">
+          <button class="bg-[#2D74D7] w-1/10 px-8 py-2 mb-7 flex flex-col items-center mr-1 text-white">
+            <div class="flex mb-3 items-center">
+              <img class="h-5" src="https://code.visualstudio.com/assets/icons/download.svg" alt="" />
+              <span class="ml-3 font-bold text-lg"> .deb </span>
             </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/python.svg"
-                alt="Python"
-              />
-              <span>Python</span>
+            <span class="text-xs">Debian, Ubuntu</span>
+          </button>
+          <button class="bg-[#2D74D7] w-1/10 px-5 py-2 mb-7 flex flex-col items-center text-white">
+            <div class="flex mb-3 items-center">
+              <img class="h-5" src="https://code.visualstudio.com/assets/icons/download.svg" alt="" />
+              <span class="ml-3 font-bold text-lg"> .rpm </span>
             </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/java.svg"
-                alt="Java"
-              />
-              <span>Java</span>
+            <span class="text-xs">Red Hat, Fedora, SUSE</span>
+          </button>
+        </div>
+        <div class="grid grid-cols-2 place-items-center">
+          <span class="text-sm font-semi-bold">.deb</span>
+          <div class="pb-1 text-xs">
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              Arm32
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7]">
+              Arm64
+            </button>
+          </div>
+          <span class="text-sm font-semi-bold">.rpm</span>
+          <div class="pb-1 text-xs">
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              Arm32
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7]">
+              Arm64
+            </button>
+          </div>
+          <span class="text-sm font-semi-bold">.tar.gz</span>
+          <div class="pb-1 text-xs">
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              Arm32
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7]">
+              Arm64
+            </button>
+          </div>
+          <span class="text-sm font-semi-bold">Snap</span>
+          <div>
+            <button class="text-white  rounded-sm bg-[#2D74D7] mr-1 text-xs">
+              Snap Store
+            </button>
+          </div>
+          <span class="text-sm font-semi-bold">CLI</span>
+          <div class="text-xs">
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              x64
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+              Arm32
+            </button>
+            <button class="text-white px-1 rounded-sm bg-[#2D74D7]">
+              Arm64
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center flex-col items-center">
+        <img class="w-24 pb-3" src="https://code.visualstudio.com/assets/images/apple-logo.svg" alt="Apple" />
+        <div class="flex">
+          <button class="bg-[#2D74D7] px-20 py-2 mb-7 flex flex-col items-center text-white">
+            <div class="flex mb-2 justify-center ">
+              <img class="h-5" src="https://code.visualstudio.com/assets/icons/download.svg" alt="" />
+              <span class="ml-3 font-bold text-lg"> Mac </span>
             </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/markdown.svg"
-                alt="Markdown"
-              />
-              <span>Markdown</span>
+            <span class="text-xs font-semi-bold">macOS 10.11+</span>
+          </button>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="flex items-center justify-center mb-2">
+            <span class="text-sm font-semi-bold mr-2 ">.zip</span>
+            <div class="text-xs">
+              <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+                Intel chip
+              </button>
+              <button class="text-white px-1 rounded-sm bg-[#2D74D7] mr-1">
+                Apple silicon
+              </button>
+              <button class="text-white px-1 rounded-sm bg-[#2D74D7]">
+                Universal
+              </button>
             </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/typescript.svg"
-                alt="TypeScript"
-              />
-              <span>TypeScript</span>
-            </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/cpp.svg"
-                alt="C++"
-              />
-              <span>C/C++</span>
-            </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/json.svg"
-                alt="JSON"
-              />
-              <span>JSON</span>
-            </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/powershell.svg"
-                alt="Powershell"
-              />
-              <span>Powershell</span>
-            </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/html.svg"
-                alt="HTML/CSS"
-              />
-              <span>HTML/CSS</span>
-            </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/csharp.svg"
-                alt="C#"
-              />
-              <span>C#</span>
-            </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/php.svg"
-                alt="PHP"
-              />
-              <span>PHP</span>
-            </div>
-            <div class="mr-10 flex">
-              <img
-                src="https://code.visualstudio.com/assets/icons/file-icons/yaml.svg"
-                alt="YAML"
-              />
-              <span>YAML</span>
+          </div>
+          <div class="flex">
+            <span class="text-sm font-semi-bold mr-2">CLI</span>
+            <div class="text-xs">
+              <button class="text-white px-1 rounded-sm bg-[#2D74D7] ">
+                Intel chip
+              </button>
+              <button class="text-white px-1 rounded-sm bg-[#2D74D7]">
+                Apple silicon
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </main>
-  </body>
+    <!-- licence and terms -->
+    <div class=" mt-24 bg-[#f5f5f5] flex flex-col ">
+      <div class=" flex justify-evenly">
+        <div class="mt-12 flex flex-col items-center">
+          <div class="mb-5">
+            <span class="font-semibold text-xl"> Want new features sooner?</span> <br>
+          </div>
+          <div>
+            <span class="text-lg text-slate-700"> Get the <span class="text-blue-600"> Insiders build </span> instead.
+            </span>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col items-center">
+          <div class="text-center mb-5 max-w-xs">
+            <span class="font-semibold text-xl">
+              Use <span class="text-blue-700"> vscode.dev </span> for quick edits online! <br>
+            </span>
+          </div>
+          <div class="text-lg  text-slate-700">
+            GitHub, Azure Repos, and local files.
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center mt-16 mb-20  ">
+        <span class="text-xs font-medium text-slate-600 mb-3">LICENSE AND PRIVACY TERMS</span>
+        <div class="leading-9 text-center text-sm text-slate-500">
+          <p>By downloading and using Visual Studio Code, you agree to the license terms and privacy statement. VS Code
+            <br> automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer
+            not <br> to have this data sent please go see How to Disable Crash Reporting to learn how to disable it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#333333] text-white flex justify-between text-sm p-6 ">
+      <div class="flex justify-center items-center">
+        <p class="ml-28">Hello from Seattle.</p>
+        <p class="ml-6"> Follow @code</p>
+        <button class="px-1 h-fit ml-6 bg-slate-50 flex justify-center items-center rounded-sm">
+          <img class="w-4 mr-2" src="https://github.com/favicon.ico" alt="GitHub">
+          <span class="text-slate-800 font-bold text-xs ">Star</span>
+        </button>
+        <button class="px-1 h-fit ml-1 bg-slate-50 flex justify-center items-center rounded-sm">
+   <span class="text-slate-800 font-bold text-xs">
+     141,488
+   </span> 
+        </button>
+      </div>
+        <ul class="flex flex-row pr-20 text-xs ">
+          <li class="px-4">Support</li>
+          <li class="px-4">Privacy</li>
+          <li class="px-4">Terms of Use</li>
+          <li class="px-4">License</li>
+          <div class="ml-5">
+            <a class="" href="https://www.microsoft.com">
+                <img class="h-5" src="https://code.visualstudio.com/assets/images/microsoft-logo.png" alt="Microsoft homepage">
+            </a>
+            <span>© 2023 Microsoft</span>
+        </div>
+        </ul>
+    </div>
+  </main>
+</body>
+
 </html>
